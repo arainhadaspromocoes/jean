@@ -212,7 +212,7 @@
   /* extras da bio */
   .foto-perfil{
     width:140px;height:140px;border-radius:50%;object-fit:cover;
-    border:3px solid var(--tinta);box-shadow:var(--sombra-m);
+    box-shadow:var(--sombra-m);
     display:block;margin:0 auto 14px;background:#fff;
   }
   .botao-bio{
@@ -394,7 +394,7 @@ function emojiBotao(nome){
 function telaHome(app){
   if (dados === null) {
     app.innerHTML = `<div class="container">
-      <div class="janela"><div class="barra barra-amarela"><span>🤴 O Imperador das Promoções</span>${controles()}</div>
+      <div class="janela"><div class="barra barra-amarela"><span>🤴 @imperadordaspromocoes</span>${controles()}</div>
       <div class="vazio"><div class="emoji">⏳</div>Carregando...</div></div></div>`;
     return;
   }
@@ -410,7 +410,7 @@ function telaHome(app){
   app.innerHTML = `
     <div class="container">
       <div class="janela">
-        <div class="barra barra-lilas"><span>🤴 O Imperador das Promoções</span>${controles()}</div>
+        <div class="barra barra-lilas"><span>🤴 @imperadordaspromocoes</span>${controles()}</div>
         <div class="corpo" style="padding:24px 16px 20px;text-align:center">
           ${dados.foto ? `<img class="foto-perfil" src="${esc(dados.foto)}" alt="${esc(nome)}">` : ""}
           <div class="hero-titulo">${esc(nome)}</div>
